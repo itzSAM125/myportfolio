@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MY WEBPAGE</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+
+  <body onload="startLoading()">
+    <div id="loadingBar"></div>
+    <script>
+      function startLoading() {
+        var elem = document.getElementById("loadingBar");
+        var width = 1;
+        var id = setInterval(frame, 10);
+        function frame() {
+          if (width >= 100) {
+            clearInterval(id);
+            elem.style.width = '0%'; // Reset the width to make the bar disappear
+          } else {
+            width++;
+            elem.style.width = width + '%';
+          }
+        }
+      }
+    </script>
+    <header>
+      <div class="banner">
+        <div class="navbar">
+          <img src="logo1.png" class="logo">
+          <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT ME</a></li>
+            <li><a href="#">IMAGES</a></li>
+            <li><a href="#">CONTACT US</a></li>
+          </ul>
+          <nav>
+          <button id="btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </nav>
+        </div>
+        
+      </div>
+
+      <div class="content">
+        <h1>"ITZME"</h1>
+        <p>MY NAME IS SAMEER. I AM STUDENT OF COMPUTER SCIENCE AT HIGH SCHOOL.<br /> I AM FREELANCER </p>
+        <div>
+          <button id="btn1" type="button"
+           onclick="window.location.href='https://www.fiverr.com/itzsam125';"><span></span>FIVERR
+            PROFILE</button>
+          <button id="btn1" type="button"
+            onclick="window.location.href='https://www.linkedin.com/in/itzsam125';"><span></span>LINKEDIN
+            PROFILE</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="fontpanel1">SWIPE DOWN</div>
+    <footer>
+      <form class="vertical-form" action="https://submit-form.com/R4QPZ9mJq">
+        <label for="footer-first-name">First + Last Name</label>
+        <input id="footer-first-name" name="footer-first-name" type="text" required>
+        <label for="footer-last-name">Gmail</label>
+        <input id="footer-last-name" name="footer-last-name" type="text" required>
+        <label for="footer-message">Message</label>
+        <textarea id="footer-message" name="footer-message" cols="15" rows="5" required></textarea>
+        <button id="foot_button" type="submit">Submit</button>
+      </form>
+
+      <div class="social-links">
+        <a href="#" class="social-icon">Social</a>
+        <a href="#" class="social-icon">Social</a>
+        <a href="#" class="social-icon">Social</a>
+        <a href="#" class="social-icon">Social</a>
+      </div>
+
+      <p>© 2024 ITZ.SAM All Rights Reserved.</p>
+    </footer>
+
+  </body>
+  <script>
+    const btn=document.getElementById("btn")
+    btn.addEventListener("click", ()=> {
+      document.querySelector("header ul").classList.toggle("show")
+    })
+  </script>
+</html>
