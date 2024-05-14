@@ -6,10 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MY WEBPAGE</title>
   <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+
+
+
 
 
   <body onload="startLoading()">
@@ -41,12 +46,12 @@
             <li><a href="#">CONTACT US</a></li>
           </ul>
           <nav>
-          <button id="btn">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-        </nav>
+            <button id="btn">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </nav>
         </div>
-        
+
       </div>
 
       <div class="content">
@@ -54,7 +59,7 @@
         <p>MY NAME IS SAMEER. I AM STUDENT OF COMPUTER SCIENCE AT HIGH SCHOOL.<br /> I AM FREELANCER </p>
         <div>
           <button id="btn1" type="button"
-           onclick="window.location.href='https://www.fiverr.com/itzsam125';"><span></span>FIVERR
+            onclick="window.location.href='https://www.fiverr.com/itzsam125';"><span></span>FIVERR
             PROFILE</button>
           <button id="btn1" type="button"
             onclick="window.location.href='https://www.linkedin.com/in/itzsam125';"><span></span>LINKEDIN
@@ -75,21 +80,32 @@
         <button id="foot_button" type="submit">Submit</button>
       </form>
 
+      <!-- Social Media Sharing Buttons (AddThis example) -->
+      <div class="addthis_inline_share_toolbox"></div>
+      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=YOUR_PROFILE_ID"></script>
+
+      <!-- Social Media Links -->
       <div class="social-links">
-        <a href="#" class="social-icon">Social</a>
-        <a href="#" class="social-icon">Social</a>
-        <a href="#" class="social-icon">Social</a>
-        <a href="#" class="social-icon">Social</a>
+        <a href="https://www.facebook.com/YourPage" class="social-icon" target="_blank" rel="noopener noreferrer"><i
+            class="fab fa-facebook-f"></i></a>
+        <a href="https://twitter.com/YourProfile" class="social-icon" target="_blank" rel="noopener noreferrer"><i
+            class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/YourProfile" class="social-icon" target="_blank" rel="noopener noreferrer"><i
+            class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/YourProfile" class="social-icon" target="_blank"
+          rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
       </div>
+
 
       <p>© 2024 ITZ.SAM All Rights Reserved.</p>
     </footer>
 
   </body>
   <script>
-    const btn=document.getElementById("btn")
-    btn.addEventListener("click", ()=> {
+    const btn = document.getElementById("btn")
+    btn.addEventListener("click", () => {
       document.querySelector("header ul").classList.toggle("show")
     })
   </script>
+
 </html>
